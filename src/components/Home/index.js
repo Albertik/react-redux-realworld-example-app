@@ -35,6 +35,15 @@ class Home extends React.Component {
       agent.Articles.all;
 
     this.props.onLoad(tab, articlesPromise, Promise.all([agent.Tags.getAll(), articlesPromise()]));
+    const ws = new WebSocket('ws://localhost:3210');
+
+    ws.onopen = function open() {
+      ws.send('something from client')
+    };
+
+    ws.onmessage = function incoming(event) {
+      console.log(event.data);
+    };
   }
 
   componentWillUnmount() {
@@ -65,6 +74,9 @@ class Home extends React.Component {
           </div>
         </div>
 
+        <div>
+          Chat here
+        </div>
       </div>
     );
   }

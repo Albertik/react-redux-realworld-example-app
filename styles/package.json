@@ -1,0 +1,32 @@
+{
+  "name": "verdene-sass",
+  "version": "1.6.0",
+  "description": "Conduit SASS files (with Bootstrap 4 included) + optional build tools for modifying templates",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-sass": "^2.2.0",
+    "gulp-server-livereload": "^1.7.1",
+    "gulp-template": "^3.1.0",
+    "gulp-util": "^3.0.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GoThinkster/conduit-sass.git"
+  },
+  "keywords": [
+    "bootstrap",
+    "sass",
+    "gulp"
+  ],
+  "author": "Eric Simons",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GoThinkster/conduit-sass/issues"
+  },
+  "homepage": "https://github.com/GoThinkster/conduit-sass#readme"
+}
